@@ -1,0 +1,68 @@
+4. $ mkdir SI_2024_lab1_226108 -создавање на директориум
+   $ cd SI_2024_lab1_226108 -влез во создадениот директориум 
+   $ git init -иницијализација на празен репозиториум
+
+5. $ git remote add origin https://github.com/SashoKostovski/SI_2024_lab1_226108.git - поврзување со оддалечениот репозиториум
+
+6. $ echo "Sasho Kostovski 226108" >README.md >README.md -создавање на датотеката
+   $ git add README.md - додавање на датотеката како staged  
+   $ git commit -m "Initial commit" -правање commit на датотеката со порака "Initial commit"
+
+7. Фајловите од линк1, линк2, и линк3 ги превземав и со file explorer ги преместив во директориумот SI_2024_lab1_226108
+   $ git add *.java -додавање на сите датотеки што завршуват со .java како staged  
+   $ git commit -m "Add starter code" - правање commit на датотеката со порака "Add starter code"
+
+8. $ git fetch origin - додава remote и ги превзема промените 
+   $ git branch -M master - создавање на нов branch наречен master
+   $ git push -u origin master - синхронизирање со оддалечениот репозиториум со креираната локална master гранка
+
+9. $ git branch bug1 - создавање гранка bug1
+   $ git branch bug1 - создавање гранка bug2
+
+10. $ git checkout bug1 - влез во гранката bug1 
+
+11. ја поправив грешката директно во фајл-от со Visual Studio Code
+   $ git add *.java - додавање на сите датотеки што завршуват со .java како staged  
+   $ git commit -m "Fix wrong condition in filterOddLengthStrings" - правање commit на промените со порака "Fix wrong condition in filterOddLengthStrings"
+
+12. $ git checkout bug2 - влез во гранката bug2
+
+13. ја поправив грешката директно во фајл-от со Visual Studio Code
+   $ git add *.java - додавање на сите датотеки што завршуват со .java како staged  
+   $ git commit -m "Fix wrong condition in makeBigStringFrom" - правање commit на промените со порака "Fix wrong condition in makeBigStringFrom"
+
+14. $ git checkout bug1 - влез во гранката bug1 
+
+15. директно го додадив методот во датотеката SILab1Main со Visual Studio Code
+   $ git add SILab1Main.java - додавање на датотеката SILab1Main.java како staged  
+   $ git commit -m "Call method filterOddLengthStrings in main class" - правање commit на промените со порака "Call method filterOddLengthStrings in main class"
+
+16. $ git checkout bug2 - влез во гранката bug2
+
+17. директно го додадив методот во датотеката SILab1Main со Visual Studio Code
+   $ git add *.java - додавање на датотеката  како staged  
+   $ git commit -m "Call method makeBigStringFrom in main class." - правање commit на промените со порака "Call method makeBigStringFrom in main class."
+
+18. $ git push origin --all - синхронизирање со оддалечениот репозиториум за сите гранки
+
+19. $ git checkout master - влез во гранката master
+
+20. $ git merge bug1 - спојување на гранката bug1 во гранката master
+
+21. git push origin --all - синхронизирање со оддалечениот репозиториум за сите гранки
+
+22.  git checkout bug2 - влез во гранката bug2
+
+23. git rebase master - rebase во гранката master od bug 2 (се појавува конфликт)
+
+28. создадов logs.txt директно ви директориумот 
+    git log > logs.txt - логовите ги зачувaв во logs.txt
+    ја додадов датотеката 226108 
+
+
+
+
+
+
+
+
